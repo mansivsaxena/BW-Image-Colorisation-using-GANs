@@ -1,1 +1,1 @@
-# BW-Image-Colorisation-usingg-GANs
+# BW-Image-Colorisation-using-GANs
