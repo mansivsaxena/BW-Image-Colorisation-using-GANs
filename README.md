@@ -1,5 +1,13 @@
 # BW-Image-Colorisation-using-GANs
 
+## Description
+To develop a Generative Adversarial Network capable of colorizing black and white
+images and experiment with methods to improve performance. With the advent of Deep Convolutional
+Networks and especially the rise of Generative Adversarial Networks, there has been an
+increasing interest in this field to automate the above task while producing results that
+can satisfactorily fool a human. Our project aims to improve the performance of an
+existing implementation of the same, with different training methodologies.
+
 ## Related Documents:
 1. Literature Review: https://drive.google.com/file/d/1RJQMepNh4rBq2k9mo0eRrP8vtWNHbUJN/view?usp=sharing
 2. Base Paper: https://drive.google.com/file/d/1JHoLdofiIjs_zhDel1LGDlr0VVj486Mg/view?usp=sharing
