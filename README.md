@@ -1,4 +1,5 @@
 # BW-Image-Colorisation-using-GANs
+Ongoing project for the academic year 2020-21.
 
 ## Description
 The project aims to develop a Generative Adversarial Network capable of colorizing black and white
