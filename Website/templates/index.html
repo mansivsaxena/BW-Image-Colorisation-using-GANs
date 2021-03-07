@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>B/W GANs</title>
+	</head>
+	<body>
+		<h1>Home page</h1>
+		{% if context["url"] != "" %}
+		<div>Hi there! {{context["url"]}}</div>
+		{% endif %}
+		<form action="#" enctype="multipart/form-data" method="POST">
+			<input type="file" name="pic" />
+			<input type="submit" value="Upload a file" />
+		</form>
+		{% if context.noImg %}
+		<div>No image uploaded!</div>
+		{% elif context.badImg %}
+		<div>Image not available!</div>
+		{% endif %}
+		<div>
+			<img
+				src="data:;charset=utf-8;base64,{{context.img}}"
+				width="500"
+				height="500"
+				style="padding-right: 5%"
+			/>
+			<img
+				src="data:;charset=utf-8;base64,{{context.img}}"
+				width="500"
+				height="500"
+			/>
+		</div>
+	</body>
+</html>
