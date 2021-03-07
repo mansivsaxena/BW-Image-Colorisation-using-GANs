@@ -58,7 +58,7 @@ def home():
         if img:
             curImg, imgNp = imgConversion(img.img)
             context["img"] = curImg
-            # print(imgNp)
+            #print(imgNp)
 
             # imgNp is the np array from the image
             #############################################
