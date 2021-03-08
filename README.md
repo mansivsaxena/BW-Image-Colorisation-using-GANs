@@ -15,3 +15,12 @@ existing implementation of the same, with different training methodologies.
 3. Paper on E-GANs: https://drive.google.com/file/d/10fY8FnqepESzdd0NO__uPEZMqY8dMn8C/view?usp=sharing
 4. Presentation: https://drive.google.com/file/d/1sirc_n9oKs28HbiWnGBFAj8uL2qn2kca/view?usp=sharing
 5. Drive Link containing all relevant papers and documents: https://drive.google.com/drive/folders/1jafcRx-lkS4q38KcqEhANk-2a1wFnfbl?usp=sharing
+
+## Website
+Made a basic website using Flask to showcase how the model performs. To install and run: 
+1. Clone repo
+2. Go to "Website" folder
+3. Make a virtual environment (preferably) 
+4. pip install -r requirements.txt
+5. python app.py
+6. localhost:5000 to access the website
