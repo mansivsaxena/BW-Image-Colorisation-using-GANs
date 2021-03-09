@@ -10,7 +10,7 @@
 		{% endif %}
 		<form action="#" enctype="multipart/form-data" method="POST">
 			<input type="file" name="pic" />
-			<input type="submit" value="Upload a file" />
+			<input type="submit" value="Colorize!" />
 		</form>
 		{% if context.noImg %}
 		<div>No image uploaded!</div>
@@ -19,13 +19,13 @@
 		{% endif %}
 		<div>
 			<img
-				src="data:;charset=utf-8;base64,{{context.img}}"
+				src="data:;charset=utf-8;base64,{{context.imgin}}"
 				width="500"
 				height="500"
 				style="padding-right: 5%"
 			/>
 			<img
-				src="data:;charset=utf-8;base64,{{context.img}}"
+				src="data:;charset=utf-8;base64,{{context.imgout}}"
 				width="500"
 				height="500"
 			/>
