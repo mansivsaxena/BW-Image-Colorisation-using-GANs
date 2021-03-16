@@ -28,7 +28,7 @@ The LAB version of dataset converted to tfrecord shards can be found [here](http
 ### Methodology
 The project can be broadly divided into the following phases:
 <dl>
-  <dt>1)Dataset Filtering and Input Pipeline</dt>
+  <dt>1) Dataset Filtering and Input Pipeline</dt>
   <ul>
     <li>Used testing subset of the <a href="http://places2.csail.mit.edu/download.html">Places365 dataset</a> (256x256)</li>
     <li>Filtered ~8000 images which did not suit colorisation problem</li>
@@ -41,7 +41,7 @@ The project can be broadly divided into the following phases:
     
   </ul>
   
-  <dt>2)Baseline UNET GAN</dt>
+  <dt>2) Baseline UNET GAN</dt>
   <ul>
     <li>Implemented UNET based coloriser inspired from <a href="https://phillipi.github.io/pix2pix/">Pix2Pix</a></li>
     <li>Trained for 15hrs(2 epochs) on google colab GPU</li>
@@ -54,7 +54,7 @@ The project can be broadly divided into the following phases:
   
   </ul>
   
-  <dt>3)Evolutionary Generative Adverserial Networks</dt>
+  <dt>3) Evolutionary Generative Adverserial Networks</dt>
   <ul>
     <li>Attempted to improve upon previous result by novel training mechanism as suggested in <a href="https://drive.google.com/file/d/10fY8FnqepESzdd0NO__uPEZMqY8dMn8C/view?usp=sharing"> this paper </a> </li>
     <li>Failed to train model upto sufficient convergence due to extreme memory requirements and limited compute resources <ul><li><sub>After initial testing we expect at least 32GB of GPU memory and approximately 48hrs of train time would give substantial results</sub></li></ul></li>
@@ -66,7 +66,7 @@ The project can be broadly divided into the following phases:
    <li>Notebook used for training can be found here <a href="https://colab.research.google.com/drive/1zI4Eq0Docd4FLhs0PuCOJ9wpdJb1Mvoz?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" align="center"></a></li>
   </ul>
   
-  <dt>4)DeOldify</dt>
+  <dt>4) DeOldify</dt>
   <ul>
     <li>Attempted to replicate results of <a href="https://github.com/jantic/DeOldify">DeOldify</a> by porting to Tensorflow</li>
     <li>Experimented with EfficientNet Backbones instead of Resnet based ones in original repository</li>
@@ -79,12 +79,12 @@ The project can be broadly divided into the following phases:
    <li>Notebook used for training can be found here <a href="https://colab.research.google.com/drive/1aCjKanfe1IPCtcZOaRIgX_P2R7NSDmpl?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" align="center"></a></li>
   </ul>
   
-  <dt>5)Improve Baseline With TPU training</dt>
+  <dt>5) Improve Baseline Model With TPU training</dt>
   <ul>
     <li>Same architecture as baseline</li>
     <li>Uploaded dataset to gcs bucket and trained using free colab TPU</li>
     <li>Train time ~6hrs(4epochs)</li>
-  <li>Significantly improved results than baseline.However our analysis suggests tendencies of overfitting.Possible causes:<ul><li>Small Dataset</li><li>Overshoot GAN stability threshold </li></ul><br>
+  <li>Significantly improved results than baseline.However our analysis suggests tendencies of overfitting. Possible causes:<ul><li>Small Dataset</li><li>Overshoot GAN stability threshold </li></ul><br>
   <div>
   <img src="https://i.redd.it/uec0s3ivyen61.png"><br>
     <sub> <em>*Sample generated image</em> </sub>
@@ -98,11 +98,11 @@ The project can be broadly divided into the following phases:
 
 ---
 
-Libraries used:Tensorflow 2.4,opencv,numpy,Pandas,matplotlib
+Libraries used: Tensorflow 2.4, opencv, numPy, Pandas, matplotlib
 
 ---
 <br>
-<em>NOTE: <br>While we failed to acheive the supposed theoretical improvements as proposed by DeOldify and EGANs,we strongly believe that given the appropriate compute resources,these models can produce results comparable(if not better) to current SOTA.
+<em>NOTE: <br>While we failed to acheive the supposed theoretical improvements as proposed by DeOldify and EGANs, we strongly believe that given the appropriate compute resources,these models can produce results comparable(if not better) to current SOTA.
   <br>
   
 </em>
