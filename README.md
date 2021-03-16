@@ -1,5 +1,5 @@
 # BW-Image-Colorisation-using-GANs
-A Black and White Image colorisier using Generative Adversarial Networks
+A Black and White Image coloriser using Generative Adversarial Networks
 
 ---
 This Project was done under the <b>Crypt</b> Special Interest Group of <a href="https://iste.nitk.ac.in/">ISTE-NITK</a>
