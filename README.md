@@ -45,7 +45,7 @@ The project can be broadly divided into the following phases:
   <ul>
     <li>Implemented UNET based coloriser inspired from <a href="https://phillipi.github.io/pix2pix/">Pix2Pix</a></li>
     <li>Trained for 15hrs(2 epochs) on google colab GPU</li>
-    <li>Results while impressive in some cases;were mostly inconsitent</li>
+    <li>Results while impressive in some cases;were mostly inconsistent</li>
   <div>
   <img src="https://i.redd.it/4mxf9ne3ben61.jpg"><br>
     <sub> <em>*Sample generated image</em> </sub>
